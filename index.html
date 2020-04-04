@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -15,34 +17,42 @@
     <title>FCC: Product Landing Page</title>
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER SECTION-->
+
     <header id="header">
-      <div>
-        <img src="" alt="" id="header-img" />
+      <div id="company">
+        <img src="./images/trombone.png" alt="" id="header-img" />
         <h1>Original Trombones</h1>
       </div>
       <div>
         <nav id="nav-bar">
-          <a href="#">Features</a>
-          <a href="#">How It Works</a>
-          <a href="#">Pricing</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#video">How It Works</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
         </nav>
       </div>
     </header>
 
     <!-- HEADLINE & EMAIL SUBMISSION SECTION -->
-    <div>
+    <div id="email-section">
       <h1>Handcrafted, home-made masterpieces</h1>
-      <form action="">
-        <input type="email" placeholder="Enter your email address" />
-        <input type="submit" value="Get Started" />
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <input type="submit" id="submit" value="Get Started" />
       </form>
     </div>
 
     <!-- FEATURES SECTION -->
     <div id="features">
       <div>
-        <img src="" alt="" />
+        <i class="fas fa-fire fa-5x"></i>
         <h1>Premium Materials</h1>
         <p>
           Our trombones use the shiniest brass which is sourced locally. This
@@ -50,7 +60,7 @@
         </p>
       </div>
       <div>
-        <img src="" alt="" />
+        <i class="fas fa-truck fa-5x"></i>
         <h1>Fast Shipping</h1>
         <p>
           We make sure you recieve your trombone as soon as we have finished
@@ -58,7 +68,7 @@
         </p>
       </div>
       <div>
-        <img src="" alt="" />
+        <i class="fas fa-battery-full fa-5x"></i>
         <h1>Quality Assurance</h1>
         <p>
           For every purchase you make, we ill ensure there are no damages or
@@ -67,13 +77,23 @@
       </div>
     </div>
 
-    <!-- SALES VIDEO -->
+    <!-- SALES VIDEO SECTION-->
     <div id="sales-video">
-      <video src=""></video>
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          id="video"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <!-- PRICING OPTIONS -->
-    <div id="pricing-options">
+    <div id="pricing">
       <div id="tenor-trombone">
         <h1>Tenor Trombone</h1>
         <h2>$600</h2>
@@ -112,5 +132,8 @@
     <div>
       <p>Copyright&copy; 2020, Original Trombones</p>
     </div>
+
+    <!-- freeCodeCamp Test -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
